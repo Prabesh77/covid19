@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import LOGO from "../../LOGO.svg";
 import fb from "../../facebook.svg";
@@ -6,7 +7,9 @@ import fb from "../../facebook.svg";
 const Header = () => {
   return (
     <div className="header">
-      <img src={LOGO} alt="a" />
+      <Link to="/">
+        <img src={LOGO} alt="a" />
+      </Link>
       <div className="developer">
         <p>
           Developed with{" "}
