@@ -47,7 +47,7 @@ const GlobalStats = ({ allData }) => {
         },
         -0.2
       );
-  });
+  }, []);
   return (
     <div>
       <Info />
