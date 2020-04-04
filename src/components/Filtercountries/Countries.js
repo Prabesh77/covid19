@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Filter from "./Filter";
-import Country from "./Country";
-import Loader from "./Loader";
+import Country from "../Mainpage/Country";
+import Loader from "../Common/Loader";
 
 const CardHolder = styled.div`
   width: 100%;
@@ -55,14 +55,14 @@ const Countries = () => {
   };
 
   useEffect(() => {
+    const fetchCountries = () => {
+      fetch("https://covid19.mathdro.id/api/countries")
+        .then((res) => res.json())
+        .then((data) => setCountries(data))
+        .catch((err) => console.log(err));
+    };
     fetchCountries();
   }, []);
-  const fetchCountries = () => {
-    fetch("https://covid19.mathdro.id/api/countries")
-      .then(res => res.json())
-      .then(data => setCountries(data))
-      .catch(err => console.log(err));
-  };
 
   if (!countries) {
     return <Loader />;
@@ -77,10 +77,10 @@ const Countries = () => {
       {countries ? (
         <CardHolder className="card-container">
           {countries.countries
-            .filter(coun =>
+            .filter((coun) =>
               coun.name.toLowerCase().includes(country.toLowerCase())
             )
-            .map(country => (
+            .map((country) => (
               <CountryCard
                 key={country.name}
                 className="country-card"

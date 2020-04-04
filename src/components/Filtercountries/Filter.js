@@ -1,6 +1,5 @@
 import React from "react";
-import Union from "../Union.svg";
-import a from "../a.png";
+import Union from "../../Union.svg";
 
 const Filter = ({ country, setCountry }) => {
   const searchHandler = e => {
@@ -17,7 +16,7 @@ const Filter = ({ country, setCountry }) => {
           onChange={searchHandler}
         />
         <button className="search-btn">
-          <img src={Union} />
+          <img src={Union} alt="search" />
         </button>
       </form>
     </div>

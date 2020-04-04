@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Overlay from "./Overlay";
-import Loader from "./Loader";
+import Overlay from "../Common/Overlay";
+import Loader from "../Common/Loader";
 
 const Modal = styled.div`
   min-height: 200px;
@@ -66,7 +66,7 @@ const Country = ({ countryName, setName, flag }) => {
         setData(data);
       })
       .catch(err => console.log(err));
-  }, []);
+  }, [countryName, setData]);
   if (!data) {
     return <Loader />;
   }
