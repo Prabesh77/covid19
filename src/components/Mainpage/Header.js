@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import LOGO from "../../LOGO.svg";
 import fb from "../../facebook.svg";
+import Star from "../../Star.png";
 
 const Header = () => {
   return (
     <div className="header">
-      <Link to="/">
-        <img src={LOGO} alt="a" />
+      <Link to="/" className="logo">
+        <img src={Star} alt="a" className="star" />
+        <h4 className="logo-text">CovidCount</h4>
       </Link>
       <div className="developer">
         <p>

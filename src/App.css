@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +22,36 @@
   z-index: 10;
 }
 
-@media (max-width: 500px) {
-  .header img {
-    height: 150px;
-    width: 150px;
+.header img {
+  height: 70px;
+  width: 70px;
+  margin-left: 1rem;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.star {
+  /* padding: 0 0 0 1rem; */
+  animation: star 5s linear infinite;
+}
+
+h4.logo-text {
+  color: #eee;
+  font-size: 18px;
+  padding: 0 0 1rem 0;
+  text-decoration: none;
+  font-family: "Righteous", cursive;
+  letter-spacing: 1px;
+}
+
+@keyframes star {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
