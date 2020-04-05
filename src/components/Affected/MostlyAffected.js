@@ -58,10 +58,10 @@ const MostlyAffected = () => {
   // const [topData, setTopData] = useState({ one, two, three });
   let first = "USA";
   let firstFlag = "US";
-  let second = "ITA";
-  let secondFlag = "IT";
-  let third = "ESP";
-  let thirdFlag = "ES";
+  let second = "ESP";
+  let secondFlag = "ES";
+  let third = "ITA";
+  let thirdFlag = "IT";
 
   useEffect(() => {
     fetchFirst(first, setOne);
