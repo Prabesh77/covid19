@@ -28,14 +28,14 @@
 }
 
 .header .developer {
-  text-align: center;
+  /* text-align: center; */
   padding: 0 5px 0 0;
   color: #ddd;
 }
 
 .header .developer img {
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
 }
 
 .header .developer p a {

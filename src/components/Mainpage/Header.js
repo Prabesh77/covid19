@@ -24,6 +24,13 @@ const Header = () => {
             <img src={fb} alt="fb" />
             &nbsp; Prabesh Regmi
           </a>
+          <br />
+          <a
+            href="https://www.facebook.com/sumeet.dahal.35"
+            style={{ textDecoration: "none" }}>
+            <img src={fb} alt="fb" />
+            &nbsp; Sumit Dahal
+          </a>
         </p>
       </div>
     </div>
