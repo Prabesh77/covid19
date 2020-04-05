@@ -110,8 +110,8 @@ const Nepal = () => {
 
       <div className="stats">
         <Alert>
-          <span>ALERT!!!</span>Nepal reaced in Stage-2 of Covid-19. Please don't
-          go out.
+          <span>ALERT!!!</span>Nepal reached in Stage-2 of Covid-19. Please
+          don't go out.
         </Alert>
         <hr />
         <div className="confirmed">
