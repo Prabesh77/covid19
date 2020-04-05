@@ -30,11 +30,24 @@ const Nep = styled.div`
     font-weight: bolder;
   }
 
+  .confirmed {
+    margin-top: 1rem;
+  }
+
+  .confirmed,
+  .recovered,
+  .deaths {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .confirmed > p:nth-child(1),
   .recovered > p:nth-child(1),
   .deaths > p:nth-child(1) {
     font-size: 0.9rem;
     color: #222;
+    width: 90%;
+    /* background: red; */
   }
 
   .confirmed > p:nth-child(2),
@@ -53,6 +66,17 @@ const Nep = styled.div`
   }
 
   .deaths p:nth-child(2) {
+    color: rgb(252, 38, 38);
+  }
+`;
+
+const Alert = styled.p`
+  font-size: 14px;
+  font-weight: bold;
+
+  span {
+    display: block;
+    font-weight: bold;
     color: rgb(252, 38, 38);
   }
 `;
@@ -85,6 +109,11 @@ const Nepal = () => {
       </div>
 
       <div className="stats">
+        <Alert>
+          <span>ALERT!!!</span>Nepal reaced in Stage-2 of Covid-19. Please don't
+          go out.
+        </Alert>
+        <hr />
         <div className="confirmed">
           <p>Total Confirmed Cases</p>
           <p>{numberWithCommas(nepData.data.confirmed.value)}</p>
