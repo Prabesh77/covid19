@@ -16,6 +16,9 @@ const Nep = styled.div`
 
   .stats {
     width: 60%;
+    background: #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
   }
 
   p.country {
@@ -31,7 +34,7 @@ const Nep = styled.div`
   .recovered > p:nth-child(1),
   .deaths > p:nth-child(1) {
     font-size: 0.9rem;
-    color: #fff;
+    color: #222;
   }
 
   .confirmed > p:nth-child(2),

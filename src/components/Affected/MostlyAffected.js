@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Loader from "../Common/Loader";
-import * as moment from "moment";
+import moment from "moment";
 
 import { fetchFirst, fetchSecond, fetchThird } from "./FetchReq";
 import TopStatCard from "./TopStatCard";
@@ -48,6 +48,9 @@ const Updated = styled.p`
   background: #222;
   color: #fff;
   margin-top: 1.5rem;
+  padding: 12px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
 `;
 
 const MostlyAffected = () => {
@@ -108,7 +111,8 @@ const MostlyAffected = () => {
         />
       </TopDataHolder>
       <Updated className="updated">
-        Last Updated On: {one.data.lastUpdate}
+        Last Updated On:{" "}
+        {moment(one.data.lastUpdate).format("MMMM Do YYYY, h:mm:ss a")}
       </Updated>
     </>
   );
