@@ -49,8 +49,9 @@ const News = styled.div`
 
   @media (max-width: 600px) {
     .image-holder {
-      height: 160px;
-      width: 250px;
+      height: 240px;
+      /* width: 320px; */
+      width: 100%;
 
       img {
         height: 100%;
