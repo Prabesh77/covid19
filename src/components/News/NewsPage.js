@@ -100,7 +100,7 @@ const NewsPage = () => {
       <div className="image-holder">
         <img src={newsimg} alt="MASKS" />
       </div>
-      <div className="content" style={{ height: show ? "" : "150px" }}>
+      <div className="content" style={{ height: show ? "" : "143px" }}>
         <p>
           Geneva, 23 March 2020: FIFA, the international governing body of
           football, and the World Health Organization (WHO) have teamed up to
