@@ -11,11 +11,12 @@ const Nep = styled.div`
   padding: 1rem;
 
   .country {
-    width: 40%;
+    width: 30%;
+    text-align: center;
   }
 
   .stats {
-    width: 60%;
+    width: 70%;
     background: #eee;
     border-radius: 8px;
     padding: 1.5rem;
@@ -98,7 +99,13 @@ const Nepal = () => {
   }, []);
 
   if (!nepData) {
-    return <Loader />;
+    return (
+      <div
+        className="small"
+        style={{ position: "relative", minHeight: "140px" }}>
+        <Loader />
+      </div>
+    );
   }
 
   return (

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Filter from "./Filter";
 import Country from "../Mainpage/Country";
 import Loader from "../Common/Loader";
+import { Link } from "react-router-dom";
 
 const CardHolder = styled.div`
   width: 100%;
@@ -42,6 +43,48 @@ const ViewMore = styled.button`
     background: #0c87ae;
   }
 `;
+
+const Affected = styled.p`
+  height: 32px;
+  padding: 0 1rem;
+  margin: 2rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  border-radius: 1rem;
+  /* font-weight: bolder; */
+  color: teal;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  animation: move 1s linear infinite;
+
+  &:hover {
+    background: #0c87ae;
+    color: #fff;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+
+    33% {
+      transform: translateY(1px);
+    }
+
+    68% {
+      transform: translateY(-1px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+`;
 const Countries = () => {
   const [countries, setCountries] = useState();
   const [country, setCountry] = useState("");
@@ -73,6 +116,9 @@ const Countries = () => {
       <h3 className="title" style={{ marginTop: "2rem" }}>
         Get the Record of Every Country In The World
       </h3>
+      <Link to="/affected">
+        <Affected>View Mostly Affected Countries</Affected>
+      </Link>
       <Filter country={country} setCountry={setCountry} />
       {countries ? (
         <CardHolder className="card-container">

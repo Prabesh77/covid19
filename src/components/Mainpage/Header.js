@@ -13,7 +13,7 @@ const Header = () => {
       </Link>
       <div className="developer">
         <p>
-          Developed with{" "}
+          Developed with
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/1111px-Love_Heart_symbol.svg.png"
             alt="love"

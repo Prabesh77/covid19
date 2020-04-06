@@ -25,7 +25,7 @@ const GlobalStats = ({ allData }) => {
       <Info />
 
       <h3 className="title">Live Record of Covid-19 Victims</h3>
-      <div className="stats-wrapper" style={{ marginTop: "2rem" }}>
+      <div className="stats-wrapper" style={{ marginTop: "1rem" }}>
         <div className="stat-card">
           <p>Total Confirmed Cases</p>{" "}
           <p>{numberWithCommas(allData.confirmed.value)}</p>

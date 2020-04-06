@@ -23,8 +23,9 @@ const Head = styled.h1`
   font-weight: lighter;
   font-size: 25px;
   background: #f54266;
-  padding: 0 6px;
+  padding: 0 1rem;
   margin-bottom: 1rem;
+  border-radius: 2rem;
 `;
 
 const TopDataHolder = styled.div`

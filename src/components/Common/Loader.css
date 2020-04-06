@@ -6,6 +6,11 @@
   z-index: 100;
 }
 
+.small .lds-heart {
+  width: 40px;
+  height: 40px;
+}
+
 .lds-heart {
   display: inline-block;
   position: relative;

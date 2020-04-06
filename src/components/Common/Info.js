@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-// import { TimelineLite } from "gsap";
 
 const Infobox = styled.div`
   min-height: 80px;

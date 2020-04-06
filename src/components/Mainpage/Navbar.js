@@ -40,7 +40,7 @@ const Navbar = () => {
           <NavLink to="/world">All Countries</NavLink>
         </li>
         <li>
-          <NavLink to="/affected">Mostly Affected</NavLink>
+          <NavLink to="/news">Latest News</NavLink>
         </li>
       </ul>
     </Navstyle>

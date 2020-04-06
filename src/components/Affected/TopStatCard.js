@@ -4,30 +4,35 @@ import styled from "styled-components";
 
 const TopCard = styled.div`
   min-height: 200px;
-  padding: 1rem 1rem 1rem 2em;
+  padding: 1rem;
+  /* margin: 10px auto; */
   -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
   -moz-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  max-width: 300px;
 
   @media (max-width: 500px) {
-    width: 80%;
+    width: 70%;
     margin: 1rem auto;
   }
 
   p.country {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
+
+  /*
 
   .confirmed > p:nth-child(1),
   .recovered > p:nth-child(1),
   .deaths > p:nth-child(1) {
     font-size: 1.3rem;
   }
+  */
 
   .confirmed > p:nth-child(2),
   .recovered > p:nth-child(2),
   .deaths > p:nth-child(2) {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bolder;
   }
 

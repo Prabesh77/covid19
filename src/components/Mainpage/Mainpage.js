@@ -6,15 +6,16 @@ import Loader from "../Common/Loader";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import MostlyAffected from "../Affected/MostlyAffected";
+import NewsPage from "./../News/NewsPage";
 
 const Mainpage = () => {
   const [allData, setAllData] = useState();
 
   const fetchAllData = () => {
     fetch("https://covid19.mathdro.id/api")
-      .then(res => res.json())
-      .then(data => setAllData(data))
-      .catch(err => {
+      .then((res) => res.json())
+      .then((data) => setAllData(data))
+      .catch((err) => {
         console.log(err);
       });
   };
@@ -33,10 +34,11 @@ const Mainpage = () => {
         <Route
           exact
           path="/"
-          render={props => <GlobalStats {...props} allData={allData} />}
+          render={(props) => <GlobalStats {...props} allData={allData} />}
         />
         <Route path="/world" component={Countries} />
         <Route path="/affected" component={MostlyAffected} />
+        <Route path="/news" component={NewsPage} />
       </Switch>
       {/* <GlobalStats allData={allData} />
       <Countries />

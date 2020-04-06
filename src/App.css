@@ -8,6 +8,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   /* background: #f6f2f2; */
@@ -34,7 +38,7 @@
 
 .star {
   /* padding: 0 0 0 1rem; */
-  animation: star 5s linear infinite;
+  animation: star 20s linear infinite;
 }
 
 h4.logo-text {
