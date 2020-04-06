@@ -91,7 +91,7 @@ const NewsPage = () => {
       </div>
       <div className="headline">
         <h2>Pass the message: Five steps to kick out coronavirus</h2>
-        <p className="published">April 5th 2020, 9:54:54 pm</p>
+        <p className="published">Mon Apr 06 2020 1:31:01 PM</p>
         <h4 className="subheading" style={{ padding: "10px 0" }}>
           WHO, FIFA launch joint campaign to equip football community to tackle
           COVID-19
