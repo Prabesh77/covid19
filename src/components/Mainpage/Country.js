@@ -6,7 +6,7 @@ import Loader from "../Common/Loader";
 const Modal = styled.div`
   min-height: 200px;
   width: 500px;
-  background: #fff;
+  background: #cdcdcd;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -16,12 +16,19 @@ const Modal = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 8px;
+  /* border-radius: 8px;
   -webkit-box-shadow: 2px 2px 10px -1px rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 2px 2px 1255px -1px rgba(255, 255, 255, 0.2);
-  box-shadow: 2px 2px 12px -1px rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 12px -1px rgba(255, 255, 255, 0.2); */
+  border-radius: 1rem;
+  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
 
-  .country {
+  # .country {
     /* padding: 0 0 0 1rem; */
     /* width: 30%; */
     text-align: center;
@@ -61,11 +68,11 @@ const Country = ({ countryName, setName, flag }) => {
 
   useEffect(() => {
     fetch(`https://covid19.mathdro.id/api/countries/${countryName}`)
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setData(data);
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
   }, [countryName, setData]);
   if (!data) {
     return <Loader />;

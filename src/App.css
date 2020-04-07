@@ -15,6 +15,8 @@ a {
 .container {
   width: 100%;
   /* background: #f6f2f2; */
+  background: #dedede;
+  min-height: 100vh;
 }
 
 .header {
@@ -193,15 +195,23 @@ h4.logo-text {
   width: 100%;
   height: 40px;
   border-radius: 2rem;
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
+  border: none;
   padding-left: 1.5rem;
   outline: none;
+  background: transparent;
+  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
 }
 
-.filter-form input:active,
+/* .filter-form input:active,
 .filter-form input:hover {
   border: 2px solid teal;
-}
+} */
 
 .search-btn {
   background: transparent;

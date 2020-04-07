@@ -30,8 +30,10 @@ const Head = styled.h1`
 
 const TopDataHolder = styled.div`
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
+  /* text-align: center; */
 `;
 
 const Wash = styled.p`
@@ -52,6 +54,7 @@ const Updated = styled.p`
   padding: 12px 0;
   font-size: 14px;
   letter-spacing: 1px;
+  margin-top: 2px solid #444;
 `;
 
 const MostlyAffected = () => {

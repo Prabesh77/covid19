@@ -39,7 +39,7 @@ const GlobalStats = ({ allData }) => {
         </div>
       </div>
       <Nepal />
-      <Updated className="updated">
+      <Updated className="updated" style={{ borderTop: "2px solid #444" }}>
         Last Updated On:{" "}
         {moment(allData.lastUpdate).format("MMMM Do YYYY, h:mm:ss a")}
       </Updated>

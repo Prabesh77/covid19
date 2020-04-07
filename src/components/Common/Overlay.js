@@ -7,7 +7,7 @@ const Over = styled.div`
   position: fixed;
   overflow: hidden;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(205, 205, 205, 0.8);
   top: 0;
   left: 0;
 `;

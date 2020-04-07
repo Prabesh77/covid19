@@ -5,11 +5,13 @@ import styled from "styled-components";
 const TopCard = styled.div`
   min-height: 200px;
   padding: 1rem;
-  /* margin: 10px auto; */
-  -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
-  -moz-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
-  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
-  max-width: 300px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
 
   @media (max-width: 500px) {
     width: 70%;
@@ -55,7 +57,7 @@ const TopStatCard = ({ confirmed, recovered, deaths, flag, name }) => {
   }
   return (
     <TopCard className="top-card">
-      <img src={flag} alt="flag" />
+      <img src={flag} alt="Loading..." />
       <p className="country">{name}</p>
       <div className="confirmed">
         <p>Total Confirmed Cases</p>

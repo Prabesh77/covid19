@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Nep = styled.div`
   min-height: 100px;
-  background: teal;
+  background: #262626;
   display: flex;
   align-items: center;
   justify-content: space-arouond;
@@ -17,13 +17,18 @@ const Nep = styled.div`
 
   .stats {
     width: 70%;
-    background: #eee;
-    border-radius: 8px;
+    /* background: #eee; */
+    border-radius: 1rem;
     padding: 1.5rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.9), -4px -4px 9px #4d4d4d;
+    -moz-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.9), -4px -4px 9px #4d4d4d;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.9), -4px -4px 9px #4d4d4d;
   }
 
-  p.country {
+  .country > p {
     font-size: 1.5rem;
+    color: #ddd;
   }
 
   .country > p {
@@ -46,7 +51,7 @@ const Nep = styled.div`
   .recovered > p:nth-child(1),
   .deaths > p:nth-child(1) {
     font-size: 0.9rem;
-    color: #222;
+    color: #ddd;
     width: 90%;
     /* background: red; */
   }
@@ -59,7 +64,7 @@ const Nep = styled.div`
   }
 
   .confirmed p:nth-child(2) {
-    color: #3f3d3d;
+    color: #fff;
   }
 
   .recovered p:nth-child(2) {
@@ -74,6 +79,7 @@ const Nep = styled.div`
 const Alert = styled.p`
   font-size: 14px;
   font-weight: bold;
+  color: #ccc;
 
   span {
     display: block;

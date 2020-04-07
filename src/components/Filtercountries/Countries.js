@@ -16,9 +16,16 @@ const CardHolder = styled.div`
 const CountryCard = styled.div`
   min-height: 180px;
   position: relative;
-  -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  /* -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
   -moz-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
-  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58); */
+  border-radius: 1rem;
+  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
 `;
 
 const ViewMore = styled.button`
@@ -34,10 +41,16 @@ const ViewMore = styled.button`
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
-  -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
+  /* -webkit-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
   -moz-box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.58);
-  outline: none;
+  outline: none; */
+  -webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  -moz-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.4),
+    -4px -4px 9px rgba(255, 255, 255, 0.8);
 
   &:hover {
     background: #0c87ae;
