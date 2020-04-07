@@ -8,28 +8,16 @@ const Infobox = styled.div`
   text-align: center;
 
   h3 {
-    color: #aaa;
+    color: #999;
     font-size: 22px;
     font-weight: lighter;
     /* transform: translateY(-50px); */
     /* opacity: 0; */
   }
 
-  h2 {
-    /* transform: translateY(-15px); */
-    /* opacity: 0; */
-  }
-
   h2 span:nth-child(1) {
     color: teal;
   }
-
-  /* .stayhome {
-    transform: translateX(-300px);
-  }
-  .staysafe {
-    transform: translateX(300px);
-  } */
 
   h2 span:nth-child(2) {
     color: purple;

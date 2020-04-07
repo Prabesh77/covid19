@@ -21,7 +21,7 @@ const GlobalStats = ({ allData }) => {
   console.log(allData);
 
   return (
-    <div>
+    <div className="neomorphic">
       <Info />
 
       <h3 className="title">Live Record of Covid-19 Victims</h3>
